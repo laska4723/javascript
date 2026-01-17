@@ -1,15 +1,6 @@
-import chalk from 'chalk';
+import { sayHi, sayText, sum, power } from './functions.js';
 
-const date = new Date().toISOString();
-
-// Серый цвет по синему фону
-console.log(chalk.gray.bgBlue(date));
-
-// Зелёный цвет по чёрному фону
-console.log(chalk.green.bgBlack(date));
-
-// Красный цвет по серому фону
-console.log(chalk.red.bgGray(date));
-
-// Синий цвет по зелёному фону
-console.log(chalk.blue.bgGreen(date));
+console.log(sayHi('Сергей'));
+console.log(sayText('Машина'));
+console.log(sum(1, 2, 3, 4, 5));
+console.log(power(2, 3));
