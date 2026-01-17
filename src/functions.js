@@ -15,3 +15,7 @@ export const sum = (a, b, c, d, e) => {
 export const power = (a, b) => {
   return a ** b;
 };
+
+export const tomatoPrice = (weight, priceForKg = 450) => {
+  return weight * priceForKg;
+};
