@@ -11,3 +11,7 @@ export const func = (str) => {
 
   return green(lower[0].toUpperCase()) + blue(lower.slice(1, -1)) + green(lower.at(-1).toUpperCase());
 };
+
+export const isStringStartsWith = (text, part) => {
+  return text.toLowerCase().startsWith(part.toLowerCase());
+};
