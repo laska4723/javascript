@@ -13,7 +13,10 @@ export const func = (str) => {
 };
 
 export const isStringStartsWith = (text, part) => {
-  return text.toLowerCase().startsWith(part.toLowerCase());
+  const lowerText = text.toLowerCase();
+  const lowerPart = part.toLowerCase();
+
+  return lowerText.startsWith(lowerPart);
 };
 
 export const getWelcomeMessage = (name, age) => {
