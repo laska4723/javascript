@@ -19,3 +19,11 @@ export const isStringStartsWith = (text, part) => {
 export const getWelcomeMessage = (name, age) => {
   return `Добро пожаловать!\nИмя: ${name}\nВозраст: ${age}\nНадеемся, Вам понравится пользоваться нашим сервисом!`;
 };
+
+export const logStringInfo = (text) => {
+  const len = text.length;
+  const first = chalk.yellow(text[0]);
+  const last = chalk.green(text.at(-1));
+
+  return `Символов: ${len}\nПервый: ${first}\nПоследний: ${last}`;
+};

@@ -1,4 +1,4 @@
-import { len, func, isStringStartsWith, getWelcomeMessage } from './strings.js';
+import { len, func, isStringStartsWith, getWelcomeMessage, logStringInfo } from './strings.js';
 
 console.log(len('Привет!'));
 console.log(len('Это очень длинная строка :)'));
@@ -20,3 +20,7 @@ console.log(isStringStartsWith('Ковёр', 'кова '));
 console.log(' ');
 
 console.log(getWelcomeMessage('Сергей', 28));
+
+console.log(' ');
+
+console.log(logStringInfo('Гренландия'));
