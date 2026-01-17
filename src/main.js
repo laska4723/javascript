@@ -1,13 +1,13 @@
-import { len, func, isStringStartsWith, getWelcomeMessage, logStringInfo } from './strings.js';
+import { len, formatText, isStringStartsWith, getWelcomeMessage, logStringInfo } from './strings.js';
 
 console.log(len('Привет!'));
 console.log(len('Это очень длинная строка :)'));
 
 console.log();
 
-console.log(func('МОЛОКО'));
-console.log(func('картошка'));
-console.log(func('СтРаНнОе СлОвО'));
+console.log(formatText('МОЛОКО'));
+console.log(formatText('картошка'));
+console.log(formatText('СтРаНнОе СлОвО'));
 
 console.log();
 
