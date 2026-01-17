@@ -1,7 +1,7 @@
 import chalk from 'chalk';
 
-export const len = (str) => {
-  return str.length;
+export const lenText = (text) => {
+  return text.length;
 };
 
 export const formatText = (text) => {

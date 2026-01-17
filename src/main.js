@@ -1,7 +1,7 @@
-import { len, formatText, isStringStartsWith, getWelcomeMessage, logStringInfo } from './strings.js';
+import { lenText, formatText, isStringStartsWith, getWelcomeMessage, logStringInfo } from './strings.js';
 
-console.log(len('Привет!'));
-console.log(len('Это очень длинная строка :)'));
+console.log(lenText('Привет!'));
+console.log(lenText('Это очень длинная строка :)'));
 
 console.log();
 
