@@ -15,3 +15,10 @@ export const func = (str) => {
 export const isStringStartsWith = (text, part) => {
   return text.toLowerCase().startsWith(part.toLowerCase());
 };
+
+export const getWelcomeMessage = (name, age) => {
+  return `Добро пожаловать!
+Имя: ${name}
+Возраст: ${age}
+Надеемся, Вам понравится пользоваться нашим сервисом!`;
+};
