@@ -17,8 +17,5 @@ export const isStringStartsWith = (text, part) => {
 };
 
 export const getWelcomeMessage = (name, age) => {
-  return `Добро пожаловать!
-Имя: ${name}
-Возраст: ${age}
-Надеемся, Вам понравится пользоваться нашим сервисом!`;
+  return `Добро пожаловать!\nИмя: ${name}\nВозраст: ${age}\nНадеемся, Вам понравится пользоваться нашим сервисом!`;
 };
