@@ -51,3 +51,28 @@ ${chalk.green('Купюр 50 необходимо:')} ${chalk.blue(banknotes50)}
 ${chalk.green('Купюр 10 необходимо:')} ${chalk.blue(banknotes10)}
 ${chalk.green('Рублей необходимо:')} ${chalk.blue(remainAmount)}`;
 };
+
+let checkCounter = 0;
+export const printCheck = (width, length) => {
+  checkCounter++;
+
+  const pricePerSquareMeter = 350;
+  const area = width * length;
+  const areaToPay = Math.ceil(area);
+  const total = areaToPay * pricePerSquareMeter;
+  const date = new Date().toISOString();
+
+  console.log(
+    `Чек #${checkCounter}
+---------
+Ширина: ${width} м
+Длина: ${length} м
+Площадь: ${area} м^2
+---------
+Нужно оплатить: ${areaToPay} м^2
+Цена 1 м^2: ${pricePerSquareMeter} руб
+Сумма за 31 м^2: ${total} руб
+---------
+Дата расчёта ${date}`,
+  );
+};
