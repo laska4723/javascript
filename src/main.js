@@ -1,4 +1,4 @@
-import { generateInteger, getSquareArea, getCircleArea, isEven } from './numbers.js';
+import { generateInteger, getSquareArea, getCircleArea, isEven, calculateChange } from './numbers.js';
 
 console.log(generateInteger(0, 5));
 
@@ -19,3 +19,7 @@ console.log();
 const num = generateInteger(1, 99);
 const even = isEven(num);
 console.log(`Число: ${num}\n${even}`);
+
+console.log(' ');
+
+console.log(calculateChange(34580));
