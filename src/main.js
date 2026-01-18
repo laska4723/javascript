@@ -1,4 +1,4 @@
-import { generateInteger, getSquareArea, getCircleArea } from './numbers.js';
+import { generateInteger, getSquareArea, getCircleArea, isEven } from './numbers.js';
 
 console.log(generateInteger(0, 5));
 
@@ -13,3 +13,9 @@ console.log();
 const circleRadius = generateInteger(3, 13);
 const circleArea = getCircleArea(circleRadius);
 console.log(`Радиус: ${circleRadius}\nПлощадь: ${circleArea}`);
+
+console.log();
+
+const num = generateInteger(1, 99);
+const even = isEven(num);
+console.log(`Число: ${num}\n${even}`);

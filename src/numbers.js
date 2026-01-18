@@ -11,3 +11,7 @@ export const getCircleArea = (radius) => {
 
   return Number(area.toFixed(2));
 };
+
+export const isEven = (number) => {
+  return number % 2 === 0;
+};
