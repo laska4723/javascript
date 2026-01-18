@@ -27,3 +27,5 @@ console.log(calculateChange(34580));
 console.log(' ');
 
 printCheck(12.3, 9.8);
+printCheck(4.8, 2);
+printCheck(5, 4.2);

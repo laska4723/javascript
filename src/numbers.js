@@ -62,8 +62,7 @@ export const printCheck = (width, length) => {
   const total = areaToPay * pricePerSquareMeter;
   const date = new Date().toISOString();
 
-  console.log(
-    `Чек #${checkCounter}
+  console.log(`Чек #${checkCounter}
 ---------
 Ширина: ${width} м
 Длина: ${length} м
@@ -73,6 +72,5 @@ export const printCheck = (width, length) => {
 Цена 1 м^2: ${pricePerSquareMeter} руб
 Сумма за 31 м^2: ${total} руб
 ---------
-Дата расчёта ${date}`,
-  );
+Дата расчёта ${date}\n`);
 };
