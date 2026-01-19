@@ -6,7 +6,10 @@ import {
   calculateChange,
   printCheck,
   calculateDesks,
+  TerraRandomis,
 } from './numbers.js';
+
+import chalk from 'chalk';
 
 console.log(generateInteger(0, 5));
 
@@ -43,4 +46,7 @@ console.log(' ');
 const classes = 13;
 const students = 7;
 const totalDesks = calculateDesks(13, 7);
-console.log(`Для ${classes} классов по ${students} учеников в каждом, необходимо купить ${totalDesks} парт(ы)`);
+console.log(`Для ${classes} классов по ${students} учеников в каждом, необходимо купить ${totalDesks} парт(ы)\n`);
+
+const terraRandomis = TerraRandomis();
+console.log(`Прогноз погоды на TerraRandomis: Температура завтра ${chalk.green(terraRandomis)} ${chalk.blue('C')}`);

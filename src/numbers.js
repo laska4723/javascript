@@ -80,3 +80,7 @@ export const calculateDesks = (classesCount, studentsPerClass) => {
 
   return classesCount * desksPerClass;
 };
+
+export const TerraRandomis = () => {
+  return ((Math.floor(Math.random() * 61) + 20) * 10 + Math.random()).toFixed(6);
+};
