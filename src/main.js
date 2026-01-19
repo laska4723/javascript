@@ -22,7 +22,7 @@ console.log(`Число: ${num}\n${even}`);
 
 console.log(' ');
 
-console.log(calculateChange(34580));
+calculateChange(34580);
 
 console.log(' ');
 

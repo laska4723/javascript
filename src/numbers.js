@@ -42,14 +42,14 @@ export const calculateChange = (amount) => {
   const banknotes10 = Math.floor(remainAmount / 10);
   remainAmount %= 10;
 
-  return `${chalk.green('Купюр 5000 необходимо:')} ${chalk.blue(banknotes5000)}
+  console.log(`${chalk.green('Купюр 5000 необходимо:')} ${chalk.blue(banknotes5000)}
 ${chalk.green('Купюр 2000 необходимо:')} ${chalk.blue(banknotes2000)}
 ${chalk.green('Купюр 1000 необходимо:')} ${chalk.blue(banknotes1000)}
 ${chalk.green('Купюр 500 необходимо:')} ${chalk.blue(banknotes500)}
 ${chalk.green('Купюр 100 необходимо:')} ${chalk.blue(banknotes100)}
 ${chalk.green('Купюр 50 необходимо:')} ${chalk.blue(banknotes50)}
 ${chalk.green('Купюр 10 необходимо:')} ${chalk.blue(banknotes10)}
-${chalk.green('Рублей необходимо:')} ${chalk.blue(remainAmount)}`;
+${chalk.green('Рублей необходимо:')} ${chalk.blue(remainAmount)}`);
 };
 
 let checkCounter = 0;
