@@ -74,3 +74,9 @@ export const printCheck = (width, length) => {
 ---------
 Дата расчёта ${date}\n`);
 };
+
+export const calculateDesks = (classesCount, studentsPerClass) => {
+  const desksPerClass = Math.ceil(studentsPerClass / 2);
+
+  return classesCount * desksPerClass;
+};

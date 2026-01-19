@@ -1,4 +1,12 @@
-import { generateInteger, getSquareArea, getCircleArea, isEven, calculateChange, printCheck } from './numbers.js';
+import {
+  generateInteger,
+  getSquareArea,
+  getCircleArea,
+  isEven,
+  calculateChange,
+  printCheck,
+  calculateDesks,
+} from './numbers.js';
 
 console.log(generateInteger(0, 5));
 
@@ -29,3 +37,10 @@ console.log(' ');
 printCheck(12.3, 9.8);
 printCheck(4.8, 2);
 printCheck(5, 4.2);
+
+console.log(' ');
+
+const classes = 13;
+const students = 7;
+const totalDesks = calculateDesks(13, 7);
+console.log(`Для ${classes} классов по ${students} учеников в каждом, необходимо купить ${totalDesks} парт(ы)`);
