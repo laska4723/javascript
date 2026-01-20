@@ -15,3 +15,18 @@ export const fizzBuzz = (number) => {
 
   return number;
 };
+
+export const generateRandomYear = () => {
+  const min = 1980;
+  const max = 2120;
+
+  return (Math.floor(Math.random() * (max / 10 - min / 10 + 1)) + min / 10) * 10;
+};
+
+export const isYearLeap = (year) => {
+  if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+    return 'високосный год';
+  }
+
+  return 'не високосный год';
+};
