@@ -39,3 +39,9 @@ export const removeProperty = (object, property) => {
 
   return object;
 };
+
+export const addProperty = (object, property, value) => {
+  object[property] = value;
+
+  return object;
+};
