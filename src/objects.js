@@ -33,3 +33,9 @@ export const modifyObject = () => {
   console.log();
   console.log(newUser);
 };
+
+export const removeProperty = (object, property) => {
+  delete object[property];
+
+  return object;
+};
