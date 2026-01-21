@@ -1,3 +1,5 @@
+import chalk from 'chalk';
+
 export const modifyObject = () => {
   const user = {
     name: 'John',
@@ -44,4 +46,16 @@ export const addProperty = (object, property, value) => {
   object[property] = value;
 
   return object;
+};
+
+export const compare = (object1, object2, property) => {
+  if (object1[property] === object2[property]) {
+    console.log(
+      `\x1b[32mУ обоих объектов по ключу "${property}" лежит одинаковое значение - ${object1[property]}\x1b[0m`,
+    );
+  } else {
+    console.log(
+      `\x1b[31mУ объектов по ключу "${property}" разные значения. У первого - ${object1[property]}, а у второго - ${object2[property]}\x1b[0m`,
+    );
+  }
 };
